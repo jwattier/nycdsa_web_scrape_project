@@ -1,0 +1,34 @@
+scrapy shell "https://www.spotrac.com/nfl/arizona-cardinals/cap/2019/"
+players = response.xpath('//tr')
+# skip first row
+player_uno.xpath('./td[1]/a/text()').extract() -> player name
+player_uno.xpath('./td[2]/span/text()').extract_first() -> position
+player_uno.xpath('./td[3]/span/text()').extract_first() -> base salary
+player_uno.xpath('./td[4]/span/text()').extract_first() => signing bonus
+player_uno.xpath('./td[5]/span/text()').extract_first() -> Roster bonus
+player_uno.xpath('./td[11]/span/text()').extract_first() -> capt hit
+
+In [16]: player_uno.xpath('./td[8]/span/text()').extract_first()
+Out[16]: '$2,333,333'
+
+In [17]: player_uno.xpath('./td[9]/span/text()').extract_first()
+Out[17]: '-'
+
+In [18]: player_uno.xpath('./td[10]/span/text()').extract_first()
+
+In [19]: player_uno.xpath('./td[10]//a/text()').extract_first()
+Out[19]: '($25,500,000)'
+
+In [20]: player_uno.xpath('./td[11]//a/text()').extract_first()
+
+In [21]: player_uno.xpath('./td[11]/span/text()').extract_first()
+Out[21]: '$14,833,333 '
+
+In [22]: player_uno.xpath('./td[12]/text()').extract_first()
+Out[22]: '7.66'
+
+In [23]: response.url
+Out[23]: 'https://www.spotrac.com/nfl/arizona-cardinals/cap/2019/'
+
+In [24]: len(players[1:])
+Out[24]: 162
