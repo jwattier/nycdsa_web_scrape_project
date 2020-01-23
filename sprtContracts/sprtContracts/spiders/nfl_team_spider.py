@@ -1,21 +1,23 @@
 from scrapy import Spider
 from sprtContracts.items import NflteamItem
 from collections import defaultdict
+import pandas as pd
+
 
 class NFLSpider(Spider):
     name = "nfl_team_spider"
     allowed_urls = ['www.spotrac.com']
-    start_urls = ['https://www.spotrac.com/nfl/arizona-cardinals/cap/2019/']
+    list_of_teams = pd.read_csv('nfl_teams_url_format.csv', header=None, names=['team_name'])['team_name'].to_list()
+    # base_url = "https://www.spotrac.com/nfl/"
+    start_urls = [
+        "https://www.spotrac.com/nfl/" + team + '/cap/' + str(year) + '/'
+        for team in list_of_teams
+        for year in list(range(2007, 2021))
+    ]
+    #  start_urls = ['https://www.spotrac.com/nfl/arizona-cardinals/cap/2019/',
+    #              "https://www.spotrac.com/nfl/arizona-cardinals/cap/2020/",]
 
     def parse(self, response):
-        # TODO: condense code to loop through a dictionary of lists
-        # TODO: add url loop with years 2007 to 2021 and with all teams
-        # base_url = 'https://www.spotrac.com/nfl/'
-        # year_range = list(range(2007, 2021))
-        # team_list
-        #
-        team = 'Arizona Cardinals'
-        year = '2019'
         players_on_page = defaultdict(list)
         active_players = response.xpath('//table[1]/tbody/tr')
         injured_players = response.xpath("//h2[contains(text(), 'Injured Reserve Cap')]/following::table[1]/tbody/tr")
@@ -50,8 +52,8 @@ class NFLSpider(Spider):
                 cap_perc = player.xpath('./td[12]/text()').extract_first()
 
                 item = NflteamItem()
-                item['team'] = team
-                item['year'] = year
+                item['team'] = response.url.split('/')[-4]
+                item['year'] = response.url.split('/')[-2]
                 item['roster_status'] = player_type
                 item['name'] = name
                 item['position'] = position
