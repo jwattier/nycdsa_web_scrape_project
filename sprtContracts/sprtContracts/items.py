@@ -24,3 +24,23 @@ class SprtcontractsItem (scrapy.Item):
     faYear = scrapy.Field()
     yrRange = scrapy.Field()
     ageAtBeg = scrapy.Field()
+
+
+class NflteamItem (scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    year = scrapy.Field()
+    team = scrapy.Field()
+    roster_status = scrapy.Field()
+    name = scrapy.Field()
+    position = scrapy.Field()
+    base_salary = scrapy.Field()
+    signing_bonus = scrapy.Field()
+    roster_bonus = scrapy.Field()
+    option_bonus = scrapy.Field()
+    workout_bonus = scrapy.Field()
+    restruct_bonus = scrapy.Field()
+    other_bonus = scrapy.Field()
+    dead_cap_amt = scrapy.Field()
+    cap_hit = scrapy.Field()
+    cap_perc = scrapy.Field()

@@ -7,6 +7,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="14814ce8-b341-4bf9-845a-5b850fe604dd">
+    <option name="files">
+      <option value="data_clean_test.ipynb" />
+    </option>
+  </component>
   <component name="ProjectId" id="1Wd8Z8XaMjJm1m6H1M6dUYMIoYr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,6 +65,7 @@
       <workItem from="1579540444907" duration="82000" />
       <workItem from="1579540743003" duration="3285000" />
       <workItem from="1579632467989" duration="619000" />
+      <workItem from="1579729947351" duration="7750000" />
     </task>
     <servers />
   </component>

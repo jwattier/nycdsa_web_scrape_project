@@ -1,11 +1,16 @@
 scrapy shell "https://www.spotrac.com/nfl/arizona-cardinals/cap/2019/"
 players = response.xpath('//tr')
 # skip first row
-player_uno.xpath('./td[1]/a/text()').extract() -> player name
+player_uno.xpath('./td[1]/a/text()').extract_first() -> player name
 player_uno.xpath('./td[2]/span/text()').extract_first() -> position
 player_uno.xpath('./td[3]/span/text()').extract_first() -> base salary
 player_uno.xpath('./td[4]/span/text()').extract_first() => signing bonus
 player_uno.xpath('./td[5]/span/text()').extract_first() -> Roster bonus
+player_uno.xpath('./td[6]/span/text()').extract_first() -> Option Bonus
+player_uno.xpath('./td[7]/span/text()').extract_first() -> Workout bonus
+player_uno.xpath('./td[8]/span/text()').extract_first() -> Restruct Bons
+player_uno.xpath('./td[9]/span/text()').extract_first() -> Misc
+player_uno.xpath('./td[5]/span/text()').extract_first() -> dead
 player_uno.xpath('./td[11]/span/text()').extract_first() -> capt hit
 
 In [16]: player_uno.xpath('./td[8]/span/text()').extract_first()
