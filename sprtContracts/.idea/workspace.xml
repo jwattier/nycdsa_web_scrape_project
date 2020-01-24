@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="869fca6f-73c1-4da8-8ac7-92e3d73a41d6" name="Default Changelist" comment="" />
+    <list default="true" id="869fca6f-73c1-4da8-8ac7-92e3d73a41d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data_clean.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +23,12 @@
   </component>
   <component name="JupyterTrust" id="14814ce8-b341-4bf9-845a-5b850fe604dd">
     <option name="files">
+      <option value="data_clean.ipynb" />
       <option value="data_clean_test.ipynb" />
     </option>
   </component>
   <component name="ProjectId" id="1Wd8Z8XaMjJm1m6H1M6dUYMIoYr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -70,6 +75,11 @@
       <workItem from="1579540743003" duration="3285000" />
       <workItem from="1579632467989" duration="619000" />
       <workItem from="1579729947351" duration="14657000" />
+      <workItem from="1579757945467" duration="240000" />
+      <workItem from="1579822836946" duration="1713000" />
+      <workItem from="1579824582611" duration="2011000" />
+      <workItem from="1579828058972" duration="2514000" />
+      <workItem from="1579836893547" duration="3549000" />
     </task>
     <servers />
   </component>
@@ -81,11 +91,28 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680/-1489.-1440.5120.1400@0.0.1280.680" timestamp="1579633072188" />
-    <state x="314" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1579632495194">
+    <state width="2499" height="398" key="GridCell.Tab.0.bottom" timestamp="1579824629114">
+      <screen x="-1489" y="-1440" width="5120" height="1400" />
+    </state>
+    <state width="2499" height="398" key="GridCell.Tab.0.bottom/0.0.1280.680/-1489.-1440.5120.1400@-1489.-1440.5120.1400" timestamp="1579824629114" />
+    <state width="2499" height="398" key="GridCell.Tab.0.center" timestamp="1579824629114">
+      <screen x="-1489" y="-1440" width="5120" height="1400" />
+    </state>
+    <state width="2499" height="398" key="GridCell.Tab.0.center/0.0.1280.680/-1489.-1440.5120.1400@-1489.-1440.5120.1400" timestamp="1579824629114" />
+    <state width="2499" height="398" key="GridCell.Tab.0.left" timestamp="1579824629113">
+      <screen x="-1489" y="-1440" width="5120" height="1400" />
+    </state>
+    <state width="2499" height="398" key="GridCell.Tab.0.left/0.0.1280.680/-1489.-1440.5120.1400@-1489.-1440.5120.1400" timestamp="1579824629113" />
+    <state width="2499" height="398" key="GridCell.Tab.0.right" timestamp="1579824629114">
+      <screen x="-1489" y="-1440" width="5120" height="1400" />
+    </state>
+    <state width="2499" height="398" key="GridCell.Tab.0.right/0.0.1280.680/-1489.-1440.5120.1400@-1489.-1440.5120.1400" timestamp="1579824629114" />
+    <state x="314" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1579828095711">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="-233" y="-1098" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1489.-1440.5120.1400@-1489.-1440.5120.1400" timestamp="1579824997020" />
     <state x="314" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1489.-1440.5120.1400@0.0.1280.680" timestamp="1579632495194" />
     <state x="314" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1579468372527" />
-    <state x="314" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1579489073159" />
+    <state x="314" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1579828095711" />
   </component>
 </project>
