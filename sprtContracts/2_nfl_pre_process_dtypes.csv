@@ -1,0 +1,8 @@
+base_salary,int64
+bonus_total,float
+name,object
+position,category
+roster_status,category
+team,category
+total_money,float
+year,int
