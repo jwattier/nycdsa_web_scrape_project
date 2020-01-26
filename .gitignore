@@ -1,0 +1,8 @@
+# files created by PyCharm Python editor
+.idea
+
+# files created by VS Code editor
+.vscode
+
+# test file utilizing Pandas read_html to pull nfl standings information
+test_pandas.html

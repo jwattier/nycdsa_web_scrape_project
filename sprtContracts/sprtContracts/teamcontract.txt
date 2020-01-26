@@ -1,3 +1,5 @@
+# these page was a reference of updating the nfl_team_spider.
+
 scrapy shell "https://www.spotrac.com/nfl/arizona-cardinals/cap/2019/"
 players = response.xpath('//tr')
 # skip first row

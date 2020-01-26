@@ -1,0 +1,25 @@
+web_scraping
+players[1].xpath('.//a/text()').extract_first() -> name
+players[1].xpath('./td[2]/text()').extract_first() -> position
+players[1].xpath('./td[3]/text()').extract_first() -> team
+players[1].xpath('./td[4]/text()').extract_first() -> age
+players[1].xpath('./td[5]/text()').extract_first() -> length of contract
+players[1].xpath('./td[6]/span/text()').extract_first() -> total dollars
+players[1].xpath('./td[7]/text()').extract_first() -> Average Salary
+players[1].xpath('./td[8]/text()').extract_first() -> Guaranteed at Signing
+players[1].xpath('./td[9]/text()').extract_first() -> practical guaranttes
+players[1].xpath('./td[10]/text()').extract_first() -> guaranteed signing
+players[1].xpath('./td[11]/text()').extract_first() -> Free Agent
+players[1].xpath('./td[1]/span[2]/text()').extract_first() -> span of the deal
+players[1].xpath('./@data-age-signed').extract_first() -> age sign
+
+
+players = response.xpath('//tr')
+https://www.spotrac.com/nfl/contracts/#
+
+nba has similar structure
+https://www.spotrac.com/nba/contracts/
+
+mlb https://www.spotrac.com/mlb/contracts/ -> no guaranteed stuff (/bc all guaranetteed)
+
+nhl
